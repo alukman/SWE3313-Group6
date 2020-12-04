@@ -33,7 +33,7 @@ public class WaiterView {
 	private JFrame frmTableStatusScreen;
 	private JLabel jLabelTime;
 	private JLabel jLabelDate;
-	private JPanel panelMainFloor;
+	private static JPanel panelMainFloor = new JPanel();
 	
 	private TableSelectedPanel panelTable1, panelTable2, panelTable3, panelTable4, panelTable5, panelTable6, panelTable7, panelTable8, 
 									panelTable9, panelTable10, panelTable11, panelTable12, panelTable13, panelTable14, panelTable15, panelTable16, 
@@ -76,7 +76,7 @@ public class WaiterView {
 		frmTableStatusScreen.getContentPane().setLayout(null);
 		
 
-		final JPanel panelMainFloor = new JPanel();
+		//final JPanel panelMainFloor = new JPanel();
 		panelMainFloor.setBounds(0, 0, 677, 350);
 		panelMainFloor.setVisible(true);
 		frmTableStatusScreen.getContentPane().add(panelMainFloor);
@@ -625,5 +625,12 @@ public class WaiterView {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void setPanelMainFloorVisibility(boolean bool) {
+		if (bool)
+			panelMainFloor.setVisible(true);
+		else
+			panelMainFloor.setVisible(false);
 	}
 }

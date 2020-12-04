@@ -116,6 +116,7 @@ public class TableSelectedPanel extends JPanel{
 			public void actionPerformed(ActionEvent arg0) {
 				isVisible = false;
 				setVisible(false);
+				WaiterView.setPanelMainFloorVisibility(true);
 			}
 		});
 		buttonHome.setBounds(483, 301, 112, 40);
