@@ -2,6 +2,7 @@ package automationSWE3313Prototype2;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -24,6 +25,7 @@ public class TableSelectedPanel extends JPanel{
 	private JTextField taxValue;
 	private JTextField totalValue;
 	
+	DecimalFormat twoDecimal = new DecimalFormat("##.##");
 	JTextArea textArea = new JTextArea();
 	
 	DefaultComboBoxModel comboBoxLarge = new DefaultComboBoxModel(new String[] {"Large Plain Pizza", "Large Pepperoni Pizza", "Large Meat Lovers Pizza", "Large Veggie Pizza"});
@@ -233,6 +235,9 @@ public class TableSelectedPanel extends JPanel{
 	 * Adds the currently selected item to the orderlist
 	 */
 	public void addItem(String chosenItem) {
+		
+		twoDecimal.setMinimumFractionDigits(2);
+		
 		double itemPrice = 0;
 		
 		
@@ -327,7 +332,10 @@ public class TableSelectedPanel extends JPanel{
 		/********* Huge Switch Statement *****************/
 
 		// Appending the chosen item to the textArea
-		textArea.append(chosenItem + "\t" + itemPrice + "\n");
+		if (chosenItem.length() >= 17)
+			textArea.append(chosenItem + "\t" + twoDecimal.format(itemPrice) + "\n");
+		else
+			textArea.append(chosenItem + "\t\t" + twoDecimal.format(itemPrice) + "\n");
 		
 		System.out.println(chosenItem);
 		System.out.println(itemPrice);
@@ -342,9 +350,9 @@ public class TableSelectedPanel extends JPanel{
 		this.tax = this.tax + (itemPrice * .06);
 		this.total = this.subtotal + this.tax;
 		
-		subtotalValue.setText(String.valueOf(subtotal));
-		taxValue.setText(String.valueOf(tax));
-		totalValue.setText(String.valueOf(total));
+		subtotalValue.setText(String.valueOf(twoDecimal.format(subtotal)));
+		taxValue.setText(String.valueOf(twoDecimal.format(tax)));
+		totalValue.setText(String.valueOf(twoDecimal.format(total)));
 		
 		
 		
