@@ -81,10 +81,14 @@ public class TableSelectedPanel extends JPanel{
 		totalValue.setBounds(284, 319, 73, 20);
 		add(totalValue);
 		
-		JComboBox comboBox = new JComboBox();
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Plain Pizza", "Pepperoni Pizza", "Meat Lovers Pizza", "Veggie Pizza"}));
-		comboBox.setBounds(389, 9, 264, 22);
-		add(comboBox);
+		JButton addButton = new JButton("Add");
+		addButton.setBounds(275, 9, 112, 20);
+		add(addButton);
+		
+		JComboBox categoryItems = new JComboBox();
+		categoryItems.setModel(new DefaultComboBoxModel(new String[] {"Plain Pizza", "Pepperoni Pizza", "Meat Lovers Pizza", "Veggie Pizza"}));
+		categoryItems.setBounds(389, 9, 264, 22);
+		add(categoryItems);
 		
 		JButton buttonCat1 = new JButton("Category 1");
 		buttonCat1.setBounds(419, 148, 112, 40);
