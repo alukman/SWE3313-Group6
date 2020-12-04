@@ -60,7 +60,6 @@ public class TableSelectedPanel extends JPanel{
 		jLabelNumberOfGuests.setBounds(24, 29, 129, 19);
 		add(jLabelNumberOfGuests);
 		
-//		JTextArea textArea = new JTextArea();
 		textArea.setBounds(24, 51, 333, 202);
 		add(textArea);
 		
@@ -110,18 +109,6 @@ public class TableSelectedPanel extends JPanel{
 		add(addButton);
 		
 		
-//		DefaultComboBoxModel comboBoxLarge = new DefaultComboBoxModel(new String[] {"Large Plain Pizza", "Large Pepperoni Pizza", "Large Meat Lovers Pizza", "Large Veggie Pizza"});
-//		DefaultComboBoxModel comboBoxMedium = new DefaultComboBoxModel(new String[] {"Medium Plain Pizza", "Medium Pepperoni Pizza", "Medium Meat Lovers Pizza", " Medium Veggie Pizza"});
-//		DefaultComboBoxModel comboBoxPersonal = new DefaultComboBoxModel(new String[] {"Personal Plain Pizza", "Personal Pepperoni Pizza", "Personal Meat Lovers Pizza", "Personal Veggie Pizza"});
-//		DefaultComboBoxModel comboBoxSides = new DefaultComboBoxModel(new String[] {"Mozzarella Sticks", "Breadsticks", "Cheese Sticks", "Soft Pretzels"});
-//		DefaultComboBoxModel comboBoxDrinks = new DefaultComboBoxModel(new String[] {"Water", "Apple Juice", "Coca-Cola", "Sprite"});
-//		DefaultComboBoxModel comboBoxDesserts = new DefaultComboBoxModel(new String[] {"Cinabon Cinnamon Rolls", "Cinabon Dough Bites", "Chocolate Chip Cookie", "Chocolate Brownie"});
-//		
-
-		
-
-		
-//		JComboBox categoryItems = new JComboBox();		This instantiation was moved up so we can reference it earlier in the code
 		categoryItems.setModel(comboBoxLarge);
 		categoryItems.setBounds(389, 9, 264, 22);
 		add(categoryItems);
@@ -217,6 +204,11 @@ public class TableSelectedPanel extends JPanel{
 				isVisible = false;
 				setVisible(false);
 				WaiterView.setPanelMainFloorVisibility(true);
+				if (textArea.getText().length() >= 1) {
+					WaiterView.changeButtonColor(tableNumber);
+				}
+				//else
+					
 			}
 		});
 		buttonHome.setBounds(483, 301, 112, 40);

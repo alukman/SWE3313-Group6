@@ -42,6 +42,11 @@ public class WaiterView {
 									panelTable9, panelTable10, panelTable11, panelTable12, panelTable13, panelTable14, panelTable15, panelTable16, 
 										panelTable17, panelTable18, panelTable19, panelTable20, panelTable21, panelTable22, panelTable23, panelTable24, 
 											panelTable25, panelTable26, panelTable27, panelTable28, panelTable29, panelTable30;
+	
+	private static JButton btnTable1, btnTable2, btnTable3, btnTable4, btnTable5, btnTable6, btnTable7, btnTable8, 
+								btnTable9, btnTable10, btnTable11, btnTable12, btnTable13, btnTable14, btnTable15, btnTable16, 
+									btnTable17, btnTable18, btnTable19, btnTable20, btnTable21, btnTable22, btnTable23, btnTable24, 
+										btnTable25, btnTable26, btnTable27, btnTable28, btnTable29, btnTable30 = new JButton();
 
 
 	/**
@@ -234,7 +239,7 @@ public class WaiterView {
 		
 		
 		//Initializing all tables
-		JButton btnTable1 = new JButton("Table 1");
+		btnTable1 = new JButton("Table 1");
 		btnTable1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -246,7 +251,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable1);
 		
 		
-		JButton btnTable2 = new JButton("Table 2");
+		btnTable2 = new JButton("Table 2");
 		btnTable2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -258,7 +263,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable2);
 
 		
-		JButton btnTable3 = new JButton("Table 3");
+		btnTable3 = new JButton("Table 3");
 		btnTable3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -270,7 +275,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable3);
 		
 		
-		JButton btnTable4 = new JButton("Table 4");
+		btnTable4 = new JButton("Table 4");
 		btnTable4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -282,7 +287,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable4);
 		
 		
-		JButton btnTable5 = new JButton("Table 5");
+		btnTable5 = new JButton("Table 5");
 		btnTable5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -294,7 +299,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable5);
 		
 		
-		JButton btnTable6 = new JButton("Table 6");
+		btnTable6 = new JButton("Table 6");
 		btnTable6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -306,7 +311,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable6);
 
 		
-		JButton btnTable7 = new JButton("Table 7");
+		btnTable7 = new JButton("Table 7");
 		btnTable7.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -318,7 +323,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable7);
 		
 		
-		JButton btnTable8 = new JButton("Table 8");
+		btnTable8 = new JButton("Table 8");
 		btnTable8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -330,7 +335,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable8);
 		
 		
-		JButton btnTable9 = new JButton("Table 9");
+		btnTable9 = new JButton("Table 9");
 		btnTable9.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -342,7 +347,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable9);
 		
 		
-		JButton btnTable10 = new JButton("Table 10");
+		btnTable10 = new JButton("Table 10");
 		btnTable10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -354,7 +359,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable10);
 
 		
-		JButton btnTable11 = new JButton("Table 11");
+		btnTable11 = new JButton("Table 11");
 		btnTable11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -366,7 +371,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable11);
 		
 		
-		JButton btnTable12 = new JButton("Table 12");
+		btnTable12 = new JButton("Table 12");
 		btnTable12.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -378,7 +383,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable12);
 		
 		
-		JButton btnTable13 = new JButton("Table 13");
+		btnTable13 = new JButton("Table 13");
 		btnTable13.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -390,7 +395,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable13);
 		
 		
-		JButton btnTable14 = new JButton("Table 14");
+		btnTable14 = new JButton("Table 14");
 		btnTable14.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -402,7 +407,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable14);
 
 		
-		JButton btnTable15 = new JButton("Table 15");
+		btnTable15 = new JButton("Table 15");
 		btnTable15.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -414,7 +419,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable15);
 		
 		
-		JButton btnTable16 = new JButton("Table 16");
+		btnTable16 = new JButton("Table 16");
 		btnTable16.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -426,7 +431,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable16);
 		
 		
-		JButton btnTable17 = new JButton("Table 17");
+		btnTable17 = new JButton("Table 17");
 		btnTable17.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -438,7 +443,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable17);
 		
 		
-		JButton btnTable18 = new JButton("Table 18");
+		btnTable18 = new JButton("Table 18");
 		btnTable18.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -450,7 +455,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable18);
 
 		
-		JButton btnTable19 = new JButton("Table 19");
+		btnTable19 = new JButton("Table 19");
 		btnTable19.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -462,7 +467,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable19);
 		
 		
-		JButton btnTable20 = new JButton("Table 20");
+		btnTable20 = new JButton("Table 20");
 		btnTable20.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -474,7 +479,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable20);
 		
 		
-		JButton btnTable21 = new JButton("Table 21");
+		btnTable21 = new JButton("Table 21");
 		btnTable21.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -486,7 +491,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable21);
 		
 		
-		JButton btnTable22 = new JButton("Table 22");
+		btnTable22 = new JButton("Table 22");
 		btnTable22.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -498,7 +503,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable22);
 
 		
-		JButton btnTable23 = new JButton("Table 23");
+		btnTable23 = new JButton("Table 23");
 		btnTable23.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -510,7 +515,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable23);
 		
 		
-		JButton btnTable24 = new JButton("Table 24");
+		btnTable24 = new JButton("Table 24");
 		btnTable24.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -522,7 +527,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable24);
 		
 		
-		JButton btnTable25 = new JButton("Table 25");
+		btnTable25 = new JButton("Table 25");
 		btnTable25.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -534,7 +539,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable25);
 		
 		
-		JButton btnTable26 = new JButton("Table 26");
+		btnTable26 = new JButton("Table 26");
 		btnTable26.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -546,7 +551,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable26);
 
 		
-		JButton btnTable27 = new JButton("Table 27");
+		btnTable27 = new JButton("Table 27");
 		btnTable27.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -558,7 +563,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable27);
 		
 		
-		JButton btnTable28 = new JButton("Table 28");
+		btnTable28 = new JButton("Table 28");
 		btnTable28.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -570,7 +575,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable28);
 		
 		
-		JButton btnTable29 = new JButton("Table 29");
+		btnTable29 = new JButton("Table 29");
 		btnTable29.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -582,7 +587,7 @@ public class WaiterView {
 		panelMainFloor.add(btnTable29);
 		
 		
-		JButton btnTable30 = new JButton("Table 30");
+		btnTable30 = new JButton("Table 30");
 		btnTable30.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				panelMainFloor.setVisible(false);
@@ -636,5 +641,101 @@ public class WaiterView {
 			panelMainFloor.setVisible(true);
 		else
 			panelMainFloor.setVisible(false);
+	}
+	
+	public static void changeButtonColor(int tableNum) {
+		switch ( tableNum ) {
+		case 1:
+			btnTable1.setBackground(Color.YELLOW);
+			break;
+		case 2:
+			btnTable2.setBackground(Color.YELLOW);
+			break;
+		case 3:
+			btnTable3.setBackground(Color.YELLOW);
+			break;
+		case 4:
+			btnTable4.setBackground(Color.YELLOW);
+			break;
+		case 5:
+			btnTable5.setBackground(Color.YELLOW);
+			break;
+		case 6:
+			btnTable6.setBackground(Color.YELLOW);
+			break;
+		case 7:
+			btnTable7.setBackground(Color.YELLOW);
+			break;
+		case 8:
+			btnTable8.setBackground(Color.YELLOW);
+			break;
+		case 9:
+			btnTable9.setBackground(Color.YELLOW);
+			break;
+		case 10:
+			btnTable10.setBackground(Color.YELLOW);
+			break;
+		case 11:
+			btnTable11.setBackground(Color.YELLOW);
+			break;
+		case 12:
+			btnTable12.setBackground(Color.YELLOW);
+			break;
+		case 13:
+			btnTable13.setBackground(Color.YELLOW);
+			break;
+		case 14:
+			btnTable14.setBackground(Color.YELLOW);
+			break;
+		case 15:
+			btnTable15.setBackground(Color.YELLOW);
+			break;
+		case 16:
+			btnTable16.setBackground(Color.YELLOW);
+			break;
+		case 17:
+			btnTable17.setBackground(Color.YELLOW);
+			break;
+		case 18:
+			btnTable18.setBackground(Color.YELLOW);
+			break;
+		case 19:
+			btnTable19.setBackground(Color.YELLOW);
+			break;
+		case 20:
+			btnTable20.setBackground(Color.YELLOW);
+			break;
+		case 21:
+			btnTable21.setBackground(Color.YELLOW);
+			break;
+		case 22:
+			btnTable22.setBackground(Color.YELLOW);
+			break;
+		case 23:
+			btnTable23.setBackground(Color.YELLOW);
+			break;
+		case 24:
+			btnTable24.setBackground(Color.YELLOW);
+			break;
+		case 25:
+			btnTable25.setBackground(Color.YELLOW);
+			break;
+		case 26:
+			btnTable26.setBackground(Color.YELLOW);
+			break;
+		case 27:
+			btnTable27.setBackground(Color.YELLOW);
+			break;
+		case 28:
+			btnTable28.setBackground(Color.YELLOW);
+			break;
+		case 29:
+			btnTable29.setBackground(Color.YELLOW);
+			break;
+		case 30:
+			btnTable30.setBackground(Color.YELLOW);
+			System.out.println("I got here " + tableNum);
+			break;
+		}
 	}
 }
