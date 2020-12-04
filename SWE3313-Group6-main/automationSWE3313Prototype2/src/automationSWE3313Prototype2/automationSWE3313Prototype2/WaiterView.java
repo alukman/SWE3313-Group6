@@ -636,6 +636,10 @@ public class WaiterView {
 		}
 	}
 	
+	/**
+	 * Used to change the Main Floor Panel's visibility
+	 * @param bool
+	 */
 	public static void setPanelMainFloorVisibility(boolean bool) {
 		if (bool)
 			panelMainFloor.setVisible(true);
@@ -643,6 +647,10 @@ public class WaiterView {
 			panelMainFloor.setVisible(false);
 	}
 	
+	/**
+	 * Allows the changing of button colors.
+	 * @param int tableNum
+	 */
 	public static void changeButtonColor(int tableNum) {
 		switch ( tableNum ) {
 		case 1:
@@ -734,7 +742,6 @@ public class WaiterView {
 			break;
 		case 30:
 			btnTable30.setBackground(Color.YELLOW);
-			System.out.println("I got here " + tableNum);
 			break;
 		}
 	}

@@ -132,10 +132,7 @@ public class TableSelectedPanel extends JPanel{
 		JButton buttonCat2 = new JButton("Sides");
 		buttonCat2.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent arg0) {
-//				isVisible = false;									
-//				setVisible(false);									
-//				WaiterView.setPanelMainFloorVisibility(true);		
+			public void actionPerformed(ActionEvent arg0) {	
 				categoryItems.setModel(comboBoxSides);
 				
 				
@@ -204,11 +201,8 @@ public class TableSelectedPanel extends JPanel{
 				isVisible = false;
 				setVisible(false);
 				WaiterView.setPanelMainFloorVisibility(true);
-				if (textArea.getText().length() >= 1) {
+				if (textArea.getText().length() >= 1)
 					WaiterView.changeButtonColor(tableNumber);
-				}
-				//else
-					
 			}
 		});
 		buttonHome.setBounds(483, 301, 112, 40);
@@ -329,13 +323,15 @@ public class TableSelectedPanel extends JPanel{
 		else
 			textArea.append(chosenItem + "\t\t" + twoDecimal.format(itemPrice) + "\n");
 		
-		System.out.println(chosenItem);
-		System.out.println(itemPrice);
-		
 		updateTotal(itemPrice);
 		
 	}
 	
+	
+	/**
+	 * Updates the Total Price in the UI
+	 * @param itemPrice
+	 */
 	public void updateTotal(double itemPrice) {
 		
 		this.subtotal = this.subtotal + itemPrice;
@@ -345,9 +341,6 @@ public class TableSelectedPanel extends JPanel{
 		subtotalValue.setText(String.valueOf(twoDecimal.format(subtotal)));
 		taxValue.setText(String.valueOf(twoDecimal.format(tax)));
 		totalValue.setText(String.valueOf(twoDecimal.format(total)));
-		
-		
-		
 		
 		
 	}
